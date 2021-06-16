@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="ratingVal" >
+    <button id="submitBtn">Submit</button>
+    <star-rating rating="3.5" id="starComponent">hello</star-rating>
+    <script>
+      let btn=document.getElementById("submitBtn")
+      btn.addEventListener("click",(e)=>{
+        let text=document.getElementById("ratingVal").value
+        document.getElementById("starComponent").setAttribute("rating",text)
+      })
+    </script>
+    <script src="./shadowDom1.js"></script>
+  </body>
+</html>

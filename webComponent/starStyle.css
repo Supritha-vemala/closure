@@ -1,0 +1,8 @@
+.inner {
+  overflow: hidden;
+  width: 30px;
+}
+.inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
